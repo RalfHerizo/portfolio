@@ -155,6 +155,16 @@ input:focus {
 	text-transform: uppercase;
 }
 
+.btn-outline-success{
+	border-color: #5ca595;
+	color: #5ca595;
+}
+
+.btn-outline-success:hover{
+	background-color: #5ca595;
+	border-color: #5ca595;
+}
+
 .btn-success,
 .btn-success:hover,
 .btn-success.focus,
