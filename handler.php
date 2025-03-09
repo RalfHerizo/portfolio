@@ -9,7 +9,7 @@ require 'php/PHPMailer-5.2.28/src/SMTP.php';
 
 $mail = new PHPMailer(true);
 $mail_subject = 'Subject';
-$mail_to_email = 'ralflionel120@gmail.com'; // your email
+$mail_to_email = 'ralflionel120@gmail.com'; // my email
 $mail_to_name = 'Webmaster';
 
 try {
@@ -28,7 +28,7 @@ try {
 	$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
 	$mail->Port = 465; // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
-	$mail->setFrom($mail_to_email, $mail_to_name); // Your email
+	$mail->setFrom($mail_to_email, $mail_to_name); // my email
 	$mail->addAddress($mail_from_email, $mail_from_name); // Add a recipient
 
 	for($ct=0; $ct<count($_FILES['file_attach']['tmp_name']); $ct++) {
