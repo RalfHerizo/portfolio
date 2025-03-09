@@ -7,6 +7,7 @@
 	04. Pagepiling
 	05. Carousels
 	06. Forms
+	07. Copyright Date
 	__ End Js Activation
 
 ***************************************************************/
@@ -206,3 +207,12 @@
 	}
 
 }($));
+
+/*-------------------------------------------------------------------------------
+	  Copy-date
+	-------------------------------------------------------------------------------*/
+
+let copyDate = document.getElementsByClassName('copy-date')[0];
+let date = new Date();
+let year = date.getFullYear();
+copyDate.innerHTML = year;
