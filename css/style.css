@@ -165,8 +165,14 @@ input:focus {
 	border-color: #5ca595;
 }
 
+.btn-outline-success:active{
+	background-color: #5ca595!important;
+	border-color: #5ca595!important;
+	color: #f2f2f2!important;
+}
+
 .btn-success,
-.btn-success:hover,
+.btn-success:hover, 
 .btn-success.focus,
 .btn-success:focus,
 .btn-success:not(:disabled):not(.disabled).active,
